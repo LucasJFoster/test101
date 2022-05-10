@@ -7,63 +7,151 @@
         <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
-        <div id="container" class="container">
-            <div id="nav">
-
-            </div>
-             <div id="content"> 
-                <a href="index.html">Home</a> |
-                <a href="about.html">About Us</a> |
-                <a href="contact.html">Contact Us</a>
-                <h1 id="title"> About Us Page</h1>
-            
-                <img src="img/apple.png"  class="dp"/>
-                <img src="img/apple.png"  class="dp"/>
-                <img src="img/apple.png"  class="dp"/>
-                <img src="img/apple.png"  class="dp"/>
-                <img src="img/apple.png"  class="dp"/>
-                <ul>
-                    <li>
-                        <p class="information"> List item 1</p> 
-                    </li>
-                    <li>
-                        <h5>List item 2</h5>
-                    </li>
-                </ul>
-                <ol>
-                    <li>
-                        <p>List item 1</p> 
-                    </li>
-                    <li>
-                        <h5>List item 2</h5>
-                    </li>
-                <ol>
-                
-                <h3>Staff Member Details</h3>
-                <table id="staffTable">
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Staff Id</th>
-                    </tr>
-                    <tr>
-                <td>Lewis Felton</td>
-                <td>29</td>
-                <td>77-98</td>
-                </tr>
-                <tr>
-                <td>Hanna Hamilton</td>
-                <td>32</td>
-                <td>22-34</td>
-                    </tr>
-                </table>
-             </div> 
-             <div id="footer">
-                 This is the footer
-             </div>
-        </div>
+        
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">My website</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          External Sites
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="https://www.amazon.com">Amazon</a></li>
+                          <li><a class="dropdown-item" href="https://www.Xbox.com">Xbox</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="https://www.Youtube.com">Youtube</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled"></a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+              <br/>
+              <div id="container" class="container">
+                 <div class="row">
+                    <div class="col-8">
+                        <h4 class="text-info">About me</h4>
+                        <p class="text-muted"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, ipsam necessitatibus. Modi ullam, culpa excepturi quidem quaerat animi quos, ex quibusdam rem voluptatum dolorum placeat quo sequi soluta quasi provident?</p>
+                    </div>
+                    <div class="col-3 offset-md-3=1">
+                       <h4 class="text-info">Contact Info</h4>
+                         <ul>
+                            <li><a href="http://www.facebook.com" class="text-danger">Facebook</a></li>
+                            <li><a href="https://twitter.com" class="text-info">Elon Musk</a></li>
+                            <li><a href="http://elegant-dragon-5adcba.netlify.app" class="text-warning">Rickroll</a></li>
+                            
+                         </ul>
+                    </div>
+              </div>
+              <br/>
+              <hr/>
+              <br/>
+              <div id="portfolio" class="text-center">
+                  <h1 class="text-info">My Portfolio</h1>
+                  <p class="lead text-muted">
+                    Not really about me but here are some cool gods and what not.
+                  </p>
+                   <p>
+                       <a href="mailto:fake@thisisntreal.com" class="btn btn-secondary my-2"> This is my Email!</a>
+                       <a href="contact.html" class="btn btn-secondary my-2"> Leave Feedback:)</a>
+                      </p>
+              </div>
+               <div id="gallery">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/anubis.jpg" class="card-img-top ZeusImg" alt="Anubis">
+                      <div class="card-body">
+                        <h5 class="card-title">Anubis</h5>
+                        <p class="card-text">Find out information on said god by using the button/Link below.</p>
+                        <a href="https://www.youtube.com/watch?v=tzDUxLThjVc" class="btn btn-primary">Information</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/monster.png" class="card-img-top ZeusImg" alt="Monster">
+                      <div class="card-body">
+                        <h5 class="card-title">Cthulhu</h5>
+                        <p class="card-text">Find out information on said god by using the button/Link below.</p>
+                        <a href="https://www.youtube.com/watch?v=VbHyFtE8ZQs" class="btn btn-primary">Information</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/snake.png" class="card-img-top ZeusImg" alt="snake">
+                    <div class="card-body">
+                      <h5 class="card-title">Kukulkan</h5>
+                      <p class="card-text">Find out information on said god by using the button/Link below.</p>
+                      <a href="https://www.youtube.com/watch?v=2PuRAMp4ZEg" class="btn btn-primary">Information</a>
+                    </div>
+                  </div> 
+                </div>
+                </div>
+                <br/>
+                <div class="row">
+                  <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/Man.jpg" class="card-img-top ZeusImg" alt="Man">
+                      <div class="card-body">
+                        <h5 class="card-title">Poseidon</h5>
+                        <p class="card-text">Find out information on said god by using the button/Link below.</p>
+                        <a href="https://www.youtube.com/watch?v=5zARzHddnWc" class="btn btn-primary">Information</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/death.png" class="card-img-top ZeusImg" alt="death">
+                      <div class="card-body">
+                        <h5 class="card-title">Stuff</h5>
+                        <p class="card-text">Find out information on said god by using the button/Link below.</p>
+                        <a href="https://www.youtube.com/watch?v=aWPcdMp0gUA" class="btn btn-primary">Information</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                    <img src="img/Zeus.png" class="card-img-top ZeusImg" alt="Zeus">
+                    <div class="card-body">
+                      <h5 class="card-title">Zeus</h5>
+                      <p class="card-text">Find out information on said god by using the button/Link below.</p>
+                      <a href="https://www.youtube.com/watch?v=Yt38-IXdpmY" class="btn btn-primary">Information</a>
+                    </div>
+                  </div> 
+                </div>
+                </div>
+               
+  
+              </div>
         <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+
+
 
     </body>
 </html>

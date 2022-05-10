@@ -8,35 +8,83 @@
   
     </head>
     <body>
-        <div id="container" class="container">
-            <div id="nav">
-                <a href="index.html">Home</a> |
-                <a href="about.html">About Us</a> |
-                <a href="contact.html">Contact Us</a>
-                <h1 id="title">Contact Us</h1>
+        <div></div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">My website</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          External Sites
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="https://www.amazon.com">Amazon</a></li>
+                          <li><a class="dropdown-item" href="https://www.Xbox.com">Xbox</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="https://www.Youtube.com">Youtube</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled"></a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+              <br/>
+              <div id="container" class="container">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputFirstName4" class="form-label">First Name</label>
+                  <input type="Text" class="form-control" id="inputFirstName4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputLastName4" class="form-label">Last Name</label>
+                  <input type="Text" class="form-control" id="inputLastName4">
+                </div>
+                <div class="col-12">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-12">
+                  <label for="inputQuery4" class="form-label">Query</label>
+                  <textarea class="form-control" id="inputQuery"></textarea>
+                </div>
+              
+                </div>
+                <br/>
+                <div class="container" class="col-12">
+                  <button type="submit" class="btn btn-primary btn-block">Submit Query</button>
+                </div>
+              </form>
+
+              <hr/>
             </div>
-             <div id="content"> 
-                
-                <form action="Success.html">
-                    <label for="fname">Full Name</label><br/>
-                    <input type="text" class="form-control" id="fname" name="fname" />
-                    <br/><br/>
-                    <label for="email">Email Address</label><br/>
-                    <input type="email" class="form-control" id="emailaddress" name="email address" />
-                    <br/><br/>
-                    <label for="query">Query</label><br/>
-                    <textarea id="query" class="form-control" name="query"></textarea>
-                    <br/>
-                    <br/>
-                    <input type="submit" class="btn btn-success" value="Submit your query" onclick="buttonClicked"()/>
-                </form>
-        
-                <script src="js/script.js"></script>
-             </div> 
-             <div id="footer">
-                 This is the footer
-             </div>
         </div>
+        <footer class="container"> 
+          <p>&copy; My Website 2022</p>
+     </footer>
+
+
+
+
+
         <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
